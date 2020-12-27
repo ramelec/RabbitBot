@@ -35,19 +35,18 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == 'embed') {
+  if(message.content == '!규칙') {
     let img = 'https://cdn.discordapp.com/attachments/749558029854179340/792574890171301908/PBLOGO2.png';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
+      .setTitle('필독규칙')
       .setURL('http://www.naver.com')
       .setAuthor('시니', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
+      .addField('2중서버금지', '타섭이랑 같이 플레이 적발시 벤입니다.')
+      .addField('법률 필독', '법을 무시하고 플레이 하다 적발시 벤입니다.')
+      .addField('인게임', '인게임에서 사적인일로 관리자 호출시 경고1회 입니다.\(팩션지원 특수직관련문의는 디엠)')
+      .addField('채팅매너', '욕설/패드립/인격모독/타섭언급 등의 채팅은 하지말아주세요. ')
       .addBlankField()
       .setTimestamp()
       .setFooter('시니', img)
@@ -59,11 +58,11 @@ client.on('message', (message) => {
       {name: 'ping', desc: '현재 핑 상태'},
       {name: 'embed', desc: 'embed 예제1'},
       {name: 'embed2', desc: 'embed 예제2 (help)'},
-      {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
+      {name: '!전체공지', desc: '서버 디스코드 확인바람'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 토끼 BOT', helpImg)
+      .setAuthor('Help of Rabbit BOT', helpImg)
       .setColor('#186de6')
       .setFooter(`Rabbit BOT ❤️`)
       .setTimestamp()
