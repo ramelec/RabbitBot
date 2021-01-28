@@ -5,7 +5,7 @@ const welcomeChannelName = "「😀」ㅣ입구";
 const byeChannelName = "「😭」ㅣ출구";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
-import os
+import os;
 
 client.on('ready', () => {
   console.log('켰다.');
