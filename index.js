@@ -5,6 +5,7 @@ const welcomeChannelName = "「😀」ㅣ입구";
 const byeChannelName = "「😭」ㅣ출구";
 const welcomeChannelComment = "어서오세요.";
 const byeChannelComment = "안녕히가세요.";
+import os
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -157,5 +158,5 @@ async function AutoMsgDelete(message, str, delay = 3000) {
   }, delay);
 }
 
-
-client.login(token);
+accss_token = os.environ["BOT_TOKEN"]
+client.run(aceess_token);
