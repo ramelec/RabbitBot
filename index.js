@@ -158,5 +158,5 @@ async function AutoMsgDelete(message, str, delay = 3000) {
   }, delay);
 }
 
-accss_token = os.environ["BOT_TOKEN"]
+accss_token = os.environ["BOT_TOKEN"];
 client.run(aceess_token);
